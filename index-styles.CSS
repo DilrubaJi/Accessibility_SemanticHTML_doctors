@@ -2,29 +2,27 @@
     box-sizing: border-box;
 }
 
-li {
-    display: inline;
-    padding: 5px;
-}
+
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    align-content: center;
 }
 
   /* Style the header */
-.header {
-    background-color: #8d8d8d;
-    padding: 30px;
+header {
+    background-color: #6a6b8b;
+    padding: 0;
     text-align: center;
     font-size: 35px;
 }
 
-.header alert {
+/* .header alert {
     background-color: #c22626;
     padding: 30px;
     text-align: center;
     font-size: 35px;
-}
+} */
 
   /* Container for flexboxes */
 .row {
@@ -41,17 +39,61 @@ body {
     height: 300px; /* Should be removed. Only for demonstration */
 }
 
-  /* Style the footer */
-.footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
+
+
+
+
+nav.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
+nav.topnav li {
+    float:left;
+    list-style-type: none;
     }
+
+nav.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav.topnav li a:hover:not(.active) {background-color: #111;}
+
+nav.topnav li a.active {background-color: #04AA6D;}
+
+  /* nav.topnav li.right {float: right;} */
+
+@media screen and (max-width: 600px) {
+    /* nav.topnav li.right,  */
+    nav.topnav li {float: none;}
+    footer.panel {float:none;}
+    
+}
+
+  /* Style the footer */
+footer.panel {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer.panel li {
+    float:left;
+    list-style-type: none;
+    padding: 20px;
+    }
+
+#headerimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/doctors-surgery.jpg");
+    min-height: 400px;
 }
