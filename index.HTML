@@ -5,8 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index-styles.CSS">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Tech Returners Surgery</title>
+    <style>
+        input[type=text],
+        select,
+        textarea,
+        input[type=tel],
+        input[type=date],
+        input[type=email],
+        input[type=submit] {
+            width: 75%;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* resize: vertical; */
+        }
+
+        label {
+            /* padding: 12px 12px 12px 0; */
+            display: flex;
+            flex-direction: column;
+            padding-top: 1em;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,39 +41,37 @@
             <li><a href="#about">About</a></li>
         </ul>
     </nav>
-    
-    <header id="headerimg">
-        <section>
-            <br>
-        <h1><a href="index.HTML">Tech Returners Surgery</a></h1>
-        </section>
-    </header>    
 
-    
+    <header id="headerimg">
+        <h1><a href="index.HTML">Tech Returners Surgery</a></h1>
+        <img src="images/doctors-surgery.jpg" width="500" alt="External building of Doctors Surgery">
+    </header>
+
     <form id="form">
         <label for="query">Search site:</label>
         <input type="search" id="query" name="q" placeholder="Search Site">
         <button>Search</button>
     </form>
-    <section>
-    <h2>Welcome to the Tech Returners Surgery!</h2>
-    <p>Contact Number: 0333 050 9138</p>
-    <h3>Surgery open times:</h3>
-    <p>Monday - Fridays: 8am - 7pm</p>
-    <p>Saturdays - Sundays: 10am - 4pm</p>
-    </section>
-    
-    <section>
-        <p>covid restriction update</p>
 
-        <p>Throughout the pandemic we have strove to make the surgery as safe as possible for all our patients and staff,
-        we will continue to do so.
-        From the 19th july 2021 nothing will change at the surgery – Patients will still need to wear a mask, socially
-        distance and
-        use hand sanitiser in the surgery and staff will continue to wear PPE.
-        If you arrive without a mask and are not exempt, you will be asked to leave.</p></section>
-  
-    
+    <section>
+        <h2>Welcome to the Tech Returners Surgery!</h2>
+        <p>Contact Number: <a href="tel:03330509138">0333 050 9138</a></p>
+        <h3>Surgery open times:</h3>
+        <p>Monday - Fridays: 8am - 7pm</p>
+        <p>Saturdays - Sundays: 10am - 4pm</p>
+    </section>
+
+    <section>
+        <h2><strong>covid restriction update</strong></h2>
+
+        <p>Throughout the pandemic we have strove to make the surgery as safe as possible for all our patients and
+            staff, we will continue to do so.</p>
+
+        <p>From the 19th july 2021 nothing will change at the surgery – Patients will still need to wear a mask,
+            socially distance and use hand sanitiser in the surgery and staff will continue to wear PPE.</p>
+
+        <p>If you arrive without a mask and are not exempt, you will be asked to leave.</p>
+    </section>
 
     <h2>How to use Ask My Doc?</h2>
     <a href="#VIDEOLINK">Video guide on how to use Ask My Doc Service</a>
@@ -63,42 +84,48 @@
 
     <h3><a href="#prescriptions">Repeat prescriptions</a></h3>
 
-    <br>
-
-    <h3>Need advice or have some feedback for us? Send us a message by filling out the form below and one of our Receptionists will be in
+    <h3>Need advice or have some feedback for us? Send us a message by filling out the form below and one of our
+        Receptionists will be in
         touch:</h3>
 
-    <form action="#submit">
-        <label for="fname">First Name...</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last Name...</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="DOB">Date of Birth...</label><br>
-        <input type="date" id="DOB" name="DOB"><br>
-        <label for="telnum">Telephone...</label><br>
-        <input type="tel" id="telnum" name="telnum"><br>
-        <label for="email">Email...</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="message">Your query or message...</label><br>
-        <textarea id="message" name="message" rows="3">Type feedback here</textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+    
+        <form action="#submit">
+            
+                <label for="fname">First Name...</label>
+                <input type="text" id="fname" name="fname">
 
+                <label for="lname">Last Name...</label>
+                <input type="text" id="lname" name="lname">
 
+                <label for="DOB">Date of Birth...</label>
+                <input type="date" id="DOB" name="DOB">
+
+                <label for="telnum">Telephone...</label>
+                <input type="tel" id="telnum" name="telnum">
+
+                <label for="email">Email...</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Your query or message...</label>
+                <textarea id="message" name="message" rows="3">Type feedback here</textarea>
+                <input type="submit" value="Submit">
+
+        </form>
+    
 
     <footer class="panel">
         <ul>
             <li><img src="./images/surgery-logo-small.jpg" alt="logo"></li>
-            <li><address>The Tech Returners Surgery,<br>
-            115 Mancunian Way,<br>
-            Manchester,
-            UK,<br>
-            M20 3PX</address></li>
+            <li>
+                <address>The Tech Returners Surgery,<br>
+                    115 Mancunian Way,<br>
+                    Manchester,
+                    UK,<br>
+                    M20 3PX</address>
+            </li>
             <li><a href="#accessibility">Accessibility</a></li>
             <li><a href="#Privacy">Privacy</a></li>
         </ul>
-
-
     </footer>
 
 </body>
